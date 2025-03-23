@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Endless Runner Game</title>
+  
+  <!-- Link to CSS -->
+  <link rel="stylesheet" href="css/style.css">
+
+  <!-- Favicon -->
+  <link rel="icon" href="assets/images/player.png">
+</head>
+<body>
+  
+  <!-- GAME AREA -->
+  <div id="gameArea">
+
+    <!-- Player -->
+    <div id="player"></div>
+
+    <!-- Scoreboard -->
+    <div id="score">Score: 0</div>
+    
+    <!-- Start Button -->
+    <button id="startBtn">Start Game</button>
+    
+    <!-- Game Over Message -->
+    <div id="gameOver" class="hidden">
+      <h1>Game Over!</h1>
+      <p>Your Score: <span id="finalScore">0</span></p>
+      <button id="restartBtn">Restart</button>
+    </div>
+  </div>
+
+  <!-- Background Music (optional, preload if needed) -->
+  <!-- <audio id="bgMusic" src="assets/sounds/background-music.mp3" loop></audio> -->
+
+  <!-- Link to JS -->
+  <script src="js/game.js"></script>
+
+</body>
+</html>

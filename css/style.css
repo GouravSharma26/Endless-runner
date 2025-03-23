@@ -1,0 +1,149 @@
+/* Reset default browser styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: 'Arial', sans-serif;
+    background-color: #111;
+    color: #fff;
+    overflow: hidden;
+  }
+  
+  /* Game Area */
+  #gameArea {
+    position: relative;
+    width: 100vw;
+    height: 100vh;
+    background: linear-gradient(to top, #222, #333);
+    overflow: hidden;
+  }
+  
+  /* Player */
+  #player {
+    position: absolute;
+    bottom: 50px;
+    left: 50px;
+    width: 50px;
+    height: 50px;
+    background-color: #4caf50;
+    border-radius: 10px;
+  }
+  
+  /* Obstacles */
+  .obstacle {
+    position: absolute;
+    bottom: 50px;
+    width: 50px;
+    height: 50px;
+    background-color: #f44336;
+    border-radius: 10px;
+  }
+  
+  /* Score */
+  #score {
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    font-size: 24px;
+    font-weight: bold;
+    color: #fff;
+  }
+  
+  /* Start Button */
+  #startBtn {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    padding: 15px 30px;
+    font-size: 18px;
+    background-color: #2196f3;
+    color: #fff;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: 0.3s;
+  }
+  
+  #startBtn:hover {
+    background-color: #1976d2;
+  }
+  
+  /* Game Over Overlay */
+  #gameOver {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    background-color: rgba(0, 0, 0, 0.8);
+    padding: 40px;
+    border-radius: 15px;
+  }
+  
+  #gameOver h1 {
+    font-size: 48px;
+    margin-bottom: 20px;
+  }
+  
+  #gameOver p {
+    font-size: 24px;
+    margin-bottom: 30px;
+  }
+  
+  #restartBtn {
+    padding: 15px 30px;
+    font-size: 18px;
+    background-color: #4caf50;
+    color: #fff;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: 0.3s;
+  }
+  
+  #restartBtn:hover {
+    background-color: #388e3c;
+  }
+  
+  /* Utility Classes */
+  .hidden {
+    display: none;
+  }
+  
+  #player {
+    position: absolute;
+    bottom: 50px;
+    left: 50px;
+    width: 50px;
+    height: 50px;
+    background-image: url('../assets/images/player.png');
+    background-size: cover;
+  }
+  
+  .obstacle {
+    position: absolute;
+    bottom: 50px;
+    width: 50px;
+    height: 50px;
+    background-image: url('../assets/images/obstacle.png');
+    background-size: cover;
+  }
+  
+  #gameArea {
+    position: relative;
+    width: 100vw;
+    height: 100vh;
+    background: url('../assets/images/background.png') repeat-x;
+    background-size: cover;
+    animation: scrollBackground 10s linear infinite;
+  }
+  
+  @keyframes scrollBackground {
+    from { background-position-x: 0; }
+    to { background-position-x: -1000px; }
+  }
+  
